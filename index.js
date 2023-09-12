@@ -32,3 +32,58 @@
 // var headerMain =document.getElementById("main-header")
 // headerMain.style.borderBottom ="solid 3px #000"
 
+
+
+// getElementByClassId
+// var items=document.getElementsByClassName("list-group-item")
+// items[1].textContent="helloWorld"
+// items[1].style.backgroundColor="yellow"
+// items[1].style.fontWeight="bold"
+
+
+//get error because you can't say
+// items.style.backgroundColor="#f4f4f4"
+
+//iterative
+// for(var i=0;i<=items.length;i++){
+//     items[i].style.backgroundColor="#f4f4f4"
+
+ 
+
+// queryselector input and last child nth-child
+
+// var header=document.querySelector('#main-header');
+// header.style.borderBottom="solid 4px #000"
+
+// var input=document.querySelector('input')
+// input.value='welcome'
+
+// var input=document.querySelector('input[type="submit"]')
+// SubmitEvent.value="send"
+
+// var item=document.querySelector('.list-group-item');
+// item.style.color='red';
+
+// var lastItem=document.querySelector
+// ('.list-group-item:last-child');
+// lastItem.style.color ='blue'
+
+// var secondItem =document.querySelector
+// ('.list-group-item:nth-child(2)');
+
+// secondItem.style.color="black"
+
+
+// query selector all
+// var titles =document.querySelectorAll('.title');
+// console.log(titles);
+// titles[0].textContent ='hello';
+
+// var odd =document.querySelectorAll('li:nth-child(odd)');
+// var even=document.querySelectorAll('li:nth-child(even)');
+
+// for(var i=0;i<odd.length;i++){
+//     odd[i].style.backgroundColor='#f4f4';
+//     even[i].style.backgroundColor='#ccc';
+// }
+
