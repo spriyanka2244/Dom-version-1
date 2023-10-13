@@ -82,10 +82,15 @@ var select=document.querySelector('select');
 
 // anything you do in submit box
 // itemInput.addEventListener('input',runEvent);
-select.addEventListener('change',runEvent)
-select.addEventListener('input',runEvent)
+// select.addEventListener('change',runEvent)
+// select.addEventListener('input',runEvent)
+
+
+form.addEventListener('submit',runEvent);
 
 function runEvent(e){
+    // its submiting to the form default to stop that we use preventDefault
+    e.preventDefault();
     console.log("event type:" +e.type);
     // document.body.style.display='none'
 
