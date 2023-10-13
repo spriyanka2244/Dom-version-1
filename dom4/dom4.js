@@ -21,5 +21,12 @@ li.className="list-group-item";
 // add text node with input value
 li.appendChild(document.createTextNode(newItem));
 
+// create del button element
+var delbut=document.createElement('button');
+// add class to del butn
+delbut.className='btn btn-danger btn-sm float-right delete';
+
+
+
 itemList.appendChild(li);
 }
