@@ -89,7 +89,7 @@ function runEvent(e){
     // document.body.style.display='none'
 
     // to catch the value in submit box
-    // console.log(e.target.value);
+     console.log(e.target.value);
     // document.getElementById('output').innerHTML='<h3>'+e.target.value+'</h3>'
 
 //    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
