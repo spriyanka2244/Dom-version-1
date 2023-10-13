@@ -15,7 +15,7 @@
     // // gives array of dom taken list 
     // console.log(e.target.classList);  
     // // output the stuff
-     var output=document.getElementById('output');
+    //  var output=document.getElementById('output');
     // output.innerHTML='<h3>' +e.target.id+ '</h3>';
     
     //   type of event
@@ -38,6 +38,7 @@
 // mouse event 
 var button = document.getElementById('button')
 var box=document.getElementById('box');
+var output=document.getElementById('output');
 
 // button.addEventListener('click',runEvent);
 // button.addEventListener('dbclick',runEvent);
@@ -60,6 +61,7 @@ box.addEventListener('mousemove',runEvent)
 function runEvent(e){
     console.log("event type:" +e.type);
 
-   output.innerHtml='<h3>MouseX' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
+//    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
+
 }
 
