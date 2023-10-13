@@ -22,10 +22,15 @@ function buttonClick(e){
     // console.log(e.type);
 
     // mouse event 
-    // window actual position  by x and y axis
-    console.log(e.clientX);
-    console.log(e.clientY);
-    // actual element position 
-    console.log(e.offsetX);
-    console.log(e.offsetY);
+    // // window actual position  by x and y axis
+    // console.log(e.clientX);
+    // console.log(e.clientY);
+    // // actual element position 
+    // console.log(e.offsetX);
+    // console.log(e.offsetY);
+
+    // if you click using alt/ctrl/shift its true else output as false in inspect
+    console.log(e.altKey);
+    console.log(e.ctrlkey);
+    console.log(e.shiftKey);
 }
