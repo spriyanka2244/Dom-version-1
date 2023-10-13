@@ -38,7 +38,7 @@
 // mouse event 
 var button = document.getElementById('button')
 var box=document.getElementById('box');
-var output=document.getElementById('output');
+// var output=document.getElementById('output');
 
 // button.addEventListener('click',runEvent);
 // button.addEventListener('dbclick',runEvent);
@@ -62,6 +62,7 @@ function runEvent(e){
     console.log("event type:" +e.type);
 
 //    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
-box.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
+// box.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
+document.body.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
 }
 
