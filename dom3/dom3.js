@@ -72,8 +72,12 @@ var form=document.querySelector('form');
 // itemInput.addEventListener('keypress',runEvent);
 
 // the submit box will focus 
-itemInput.addEventListener('focus',runEvent);
-itemInput.addEventListener('blur',runEvent);
+// itemInput.addEventListener('focus',runEvent);
+// itemInput.addEventListener('blur',runEvent);
+
+itemInput.addEventListener('cut',runEvent);
+itemInput.addEventListener('paste',runEvent);
+
 
 
 function runEvent(e){
