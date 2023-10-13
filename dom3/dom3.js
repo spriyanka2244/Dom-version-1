@@ -63,11 +63,13 @@ var itemInput=document.querySelector('input[type="text"]');
 var form=document.querySelector('form');
 
 // it count what ever you type in submit box when you enter
- itemInput.addEventListener('keydown',runEvent);
+//  itemInput.addEventListener('keydown',runEvent);
 
 // it count what ever you type in submit box when you enter and hold out it will count
-itemInput.addEventListener('keyup',runEvent);
+// itemInput.addEventListener('keyup',runEvent);
 
+// when you press any key
+itemInput.addEventListener('keypress',runEvent);
 
 
 function runEvent(e){
