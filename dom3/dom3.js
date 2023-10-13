@@ -37,9 +37,12 @@
 
 var button = document.getElementById('button')
 
-button.addEventListener('click',runEvent);
-button.addEventListener('dbclick',runEvent);
+// button.addEventListener('click',runEvent);
+// button.addEventListener('dbclick',runEvent);
 
+// button.addEventListener('mousedown',runEvent);
+// click and hold nothing happens when you free the holdthe event occur
+button.addEventListener('mouseup',runEvent);
 function runEvent(e){
     console.log("event type:" +e.type);
 }
