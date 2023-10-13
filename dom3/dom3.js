@@ -58,11 +58,18 @@ var box=document.getElementById('box');
 // it count how many times thhe mouse moved in thhe box
 // box.addEventListener('mousemove',runEvent)
 
+var itemInput=document.querySelector('input[type="text"]');
+var form=document.querySelector('form');
+
+// it count what ever you type in submit box
+itemInput.addEventListener('keydown',runEvent);
+
+
 function runEvent(e){
     console.log("event type:" +e.type);
 
 //    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
 // box.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
-document.body.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
+// document.body.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
 }
 
