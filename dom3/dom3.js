@@ -1,8 +1,8 @@
 //add event listener
-var button = document.getElementById('button').addEventListener
-('click',buttonClick);
+// var button = document.getElementById('button').addEventListener
+// ('click',buttonClick);
 
-function buttonClick(e){
+// function buttonClick(e){
     //console.log('button clicked')
     // document.getElementById('header-title').textContent="hello world"
     // document.querySelector('#main').style.backgroundColor="red"
@@ -30,7 +30,17 @@ function buttonClick(e){
     // console.log(e.offsetY);
 
     // if you click using alt/ctrl/shift its true else output as false in inspect
-    console.log(e.altKey);
-    console.log(e.ctrlkey);
-    console.log(e.shiftKey);
+    // console.log(e.altKey);
+    // console.log(e.ctrlkey);
+    // console.log(e.shiftKey);
+// }
+
+var button = document.getElementById('button')
+
+button.addEventListener('click',runEvent);
+button.addEventListener('dbclick',runEvent);
+
+function runEvent(e){
+    console.log("event type:" +e.type);
 }
+
