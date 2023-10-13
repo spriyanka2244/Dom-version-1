@@ -82,6 +82,7 @@ itemInput.addEventListener('paste',runEvent);
 
 function runEvent(e){
     console.log("event type:" +e.type);
+    document.body.style.display='none'
 
     // to catch the value in submit box
     // console.log(e.target.value);
