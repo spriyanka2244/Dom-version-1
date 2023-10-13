@@ -61,6 +61,8 @@ var box=document.getElementById('box');
 // submit value you get
 var itemInput=document.querySelector('input[type="text"]'); 
 var form=document.querySelector('form');
+var select=document.querySelector('select');
+
 
 // it count what ever you type in submit box when you enter
 //  itemInput.addEventListener('keydown',runEvent);
@@ -79,8 +81,8 @@ var form=document.querySelector('form');
 // itemInput.addEventListener('paste',runEvent);
 
 // anything you do in submit box
-itemInput.addEventListener('input',runEvent);
-
+// itemInput.addEventListener('input',runEvent);
+select.addEventListener('change',runEvent)
 
 function runEvent(e){
     console.log("event type:" +e.type);
