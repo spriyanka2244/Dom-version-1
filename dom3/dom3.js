@@ -69,7 +69,11 @@ var form=document.querySelector('form');
 // itemInput.addEventListener('keyup',runEvent);
 
 // when you press any key
-itemInput.addEventListener('keypress',runEvent);
+// itemInput.addEventListener('keypress',runEvent);
+
+// the submit box will focus 
+itemInput.addEventListener('focus',runEvent);
+itemInput.addEventListener('blur',runEvent);
 
 
 function runEvent(e){
