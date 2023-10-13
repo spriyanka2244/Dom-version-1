@@ -75,14 +75,16 @@ var form=document.querySelector('form');
 // itemInput.addEventListener('focus',runEvent);
 // itemInput.addEventListener('blur',runEvent);
 
-itemInput.addEventListener('cut',runEvent);
-itemInput.addEventListener('paste',runEvent);
+// itemInput.addEventListener('cut',runEvent);
+// itemInput.addEventListener('paste',runEvent);
 
+// anything you do in submit box
+itemInput.addEventListener('input',runEvent);
 
 
 function runEvent(e){
     console.log("event type:" +e.type);
-    document.body.style.display='none'
+    // document.body.style.display='none'
 
     // to catch the value in submit box
     // console.log(e.target.value);
