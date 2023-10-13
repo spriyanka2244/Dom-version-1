@@ -62,9 +62,11 @@ var box=document.getElementById('box');
 var itemInput=document.querySelector('input[type="text"]'); 
 var form=document.querySelector('form');
 
-// it count what ever you type in submit box
+// it count what ever you type in submit box when you enter
  itemInput.addEventListener('keydown',runEvent);
 
+// it count what ever you type in submit box when you enter and hold out it will count
+itemInput.addEventListener('keyup',runEvent);
 
 
 
@@ -72,8 +74,8 @@ function runEvent(e){
     console.log("event type:" +e.type);
 
     // to catch the value in submit box
-    console.log(e.target.value);
-    document.getElementById('output').innerHTML='<h3>'+e.target.value+'</h3>'
+    // console.log(e.target.value);
+    // document.getElementById('output').innerHTML='<h3>'+e.target.value+'</h3>'
 
 //    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
 // box.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
