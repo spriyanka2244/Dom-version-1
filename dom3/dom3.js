@@ -56,12 +56,12 @@ var output=document.getElementById('output');
 // box.addEventListener('mouseout',runEvent)
 
 // it count how many times thhe mouse moved in thhe box
-box.addEventListener('mousemove',runEvent)
+// box.addEventListener('mousemove',runEvent)
 
 function runEvent(e){
     console.log("event type:" +e.type);
 
 //    output.innerHtml='<h3>MouseX:' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
-
+box.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+",40)"
 }
 
