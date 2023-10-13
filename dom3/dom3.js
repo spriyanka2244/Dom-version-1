@@ -15,7 +15,7 @@
     // // gives array of dom taken list 
     // console.log(e.target.classList);  
     // // output the stuff
-    // var output=document.getElementById('output');
+     var output=document.getElementById('output');
     // output.innerHTML='<h3>' +e.target.id+ '</h3>';
     
     //   type of event
@@ -35,6 +35,7 @@
     // console.log(e.shiftKey);
 // }
 
+// mouse event 
 var button = document.getElementById('button')
 var box=document.getElementById('box');
 
@@ -46,14 +47,19 @@ var box=document.getElementById('box');
 // button.addEventListener('mouseup',runEvent);
 
 // will be for outer element only  
-box.addEventListener('mouseenter',runEvent)
-box.addEventListener('mouseleave',runEvent)
+// box.addEventListener('mouseenter',runEvent)
+// box.addEventListener('mouseleave',runEvent)
 
 //will be for inner element also like in the box u have text hello if you mouseour the event ocure
-box.addEventListener('mouseover',runEvent)
-box.addEventListener('mouseout',runEvent)
+// box.addEventListener('mouseover',runEvent)
+// box.addEventListener('mouseout',runEvent)
+
+// it count how many times thhe mouse moved in thhe box
+box.addEventListener('mousemove',runEvent)
 
 function runEvent(e){
     console.log("event type:" +e.type);
+
+   output.innerHtml='<h3>MouseX' +e.offsetX+'</h3> <h3>MouseX' +e.offsetY +'</h3>';
 }
 
