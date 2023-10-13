@@ -14,5 +14,9 @@ function buttonClick(e){
     console.log(e.target.className);
     // gives array of dom taken list 
     console.log(e.target.classList);  
+    // output the stuff
+    var output=document.getElementById('output');
+    output.innerHTML='<h3>' +e.target.id+ '</h3>';
+
     
 }
