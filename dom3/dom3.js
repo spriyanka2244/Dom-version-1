@@ -36,13 +36,23 @@
 // }
 
 var button = document.getElementById('button')
+var box=document.getElementById('box');
 
 // button.addEventListener('click',runEvent);
 // button.addEventListener('dbclick',runEvent);
+// mouse down when u click the event occure
+//  button.addEventListener('mousedown',runEvent);
+// click and hold nothing happens when you free the hold of the  click event occur
+// button.addEventListener('mouseup',runEvent);
 
-// button.addEventListener('mousedown',runEvent);
-// click and hold nothing happens when you free the holdthe event occur
-button.addEventListener('mouseup',runEvent);
+// will be for outer element only  
+box.addEventListener('mouseenter',runEvent)
+box.addEventListener('mouseleave',runEvent)
+
+//will be for inner element also like in the box u have text hello if you mouseour the event ocure
+box.addEventListener('mouseover',runEvent)
+box.addEventListener('mouseout',runEvent)
+
 function runEvent(e){
     console.log("event type:" +e.type);
 }
